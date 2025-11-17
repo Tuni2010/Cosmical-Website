@@ -1,0 +1,28 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+
+
+
+.outside-hotbar {
+    max-width: 1500px;
+    height: 20px;
+    background-color: rgb(10, 2, 85);        
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    border: 0 solid;
+    border-radius: 40px;
+}
+
+.inside-hotbar {
+    width: auto;
+    margin: 50px;
+    display: flex;
+    border: grey 1px solid;
+    background-color:rgb(10, 2, 85);
+}
+
