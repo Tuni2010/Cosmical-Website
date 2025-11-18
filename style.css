@@ -6,7 +6,7 @@
    --grey-font-color: grey;
    --dark-mode-background-color: #121212;
    --light-mode-background-color: #ffffff;
-   --grey-border: rgb(48, 47, 47) 1px solid;
+   --grey-border: 1px solid rgb(48, 47, 47);
    --color-bg: #0f1724;           /* primärer Hintergrund (hell/dunkel je nach theme) */
   --color-surface: #0b1220;      /* Karten / Header Fläche */
   --color-muted: #94a3b8;        /* sekundärer Text / schwächerer Kontrast */
@@ -86,24 +86,13 @@
   --border: 1px solid rgba(2,6,23,0.06);
 }
 
-@keyframes shine {
-    0% {
-        transform: translateX(-150%) skewX(-20deg);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(150%) skewX(-20deg);
-        opacity: 0;
-    }
-}
+
 
 
 body {
   font-family: var(--standart-text-font);
   background-color: rgb(30, 25, 58);
+  display: flex;
   
 }
 
@@ -169,11 +158,10 @@ body {
     max-width: 800px;
     height: 50px;
     display: flex;
-    justify-content: center;
-    text-decoration: none;
+    justify-content: space-evenly;
     border: var(--grey-border);
     background-color: var(--dark-mode-background-color);
-    gap: 35px;
+    
     border-radius: 40px;
 }
 
@@ -224,18 +212,29 @@ body {
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+    
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .inside-hotbar {
         display: none;
     }
 
     .hamburger {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid rgb(48, 47, 47);
+        
         border-radius: 100%;
-        display: block;
-    }
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+}
+
 }
