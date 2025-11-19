@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +30,7 @@
             <a class="hotbar-link" href="/events">EVENTS</a>
             <a class="hotbar-link-join-us" href="/join-us">JOIN US</a>
         </div>
-        <button class="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="4" width="24" height="2" fill="currentColor" />
                 <rect y="11" width="24" height="2" fill="currentColor" />
@@ -37,10 +38,10 @@
             </svg>
         </button>
     </header>
-    <div class="hamburger-menu">
+    <div class="hamburger-menu" id="hamburgerMenu">
         <div class="showcase-and-button">
             <h2 class="hamburger-showcase">COSMICAL-MENU</h2>
-            <button class="close-button" aria-label="Close alert" type="button">
+            <button class="close-button" id="closeButton" aria-label="Close alert" type="button">
                 <span aria-hidden="true">×</span>
             </button>
         </div>
@@ -52,7 +53,7 @@
             <a class="hamburger-link" href="/griefs">GRIEFS</a>
             <a class="hamburger-link" href="/allies">ALLIES</a>
             <a class="hamburger-link" href="/events">EVENTS</a>
-            <a class="hamburger-link-join-us" href="/join-us">JOIN US</a>
+            <a class="hamburger-link" href="/join-us">JOIN US</a>
         </div>
     </div>
 </body>
