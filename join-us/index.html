@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +15,10 @@
 </head>
 
 <body>
-    <header class="outside-hotbar">                                 
+    <header class="outside-hotbar">
         <a class="cosmical-logo-link" href="https://cosmical.cc">
             <img class="cosmical-logo" src="/assets/cosmical-logo.png" alt="Cosmical Clan Logo">
-            <span class="logo-text">COSMICAL</span>           
+            <span class="logo-text">COSMICAL</span>
         </a>
         <div class="inside-hotbar">
             <a class="hotbar-link" href="/">HOME</a>
@@ -29,8 +30,32 @@
             <a class="hotbar-link" href="/events">EVENTS</a>
             <a class="hotbar-link-join-us" href="/join-us">JOIN US</a>
         </div>
-        <button class="hamburger" aria-label="Menu">&#9776;</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="4" width="24" height="2" fill="currentColor" />
+                <rect y="11" width="24" height="2" fill="currentColor" />
+                <rect y="18" width="24" height="2" fill="currentColor" />
+            </svg>
+        </button>
     </header>
+    <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="showcase-and-button">
+            <h2 class="hamburger-showcase">COSMICAL-MENU</h2>
+            <button class="close-button" id="closeButton" aria-label="Close alert" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="hamburger-link-folder">
+            <a class="hamburger-link" href="/">HOME</a>
+            <a class="hamburger-link" href="/history">HISTORY</a>
+            <a class="hamburger-link" href="/projects">PROJECTS</a>
+            <a class="hamburger-link" href="/leaders">LEADERS</a>
+            <a class="hamburger-link" href="/griefs">GRIEFS</a>
+            <a class="hamburger-link" href="/allies">ALLIES</a>
+            <a class="hamburger-link" href="/events">EVENTS</a>
+            <a class="hamburger-link" href="/join-us">JOIN US</a>
+        </div>
+    </div>
 </body>
 
 </html>

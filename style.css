@@ -295,7 +295,7 @@ body {
       .hamburger-link-folder {
         display: flex;
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 20px;
         padding: auto;
         justify-content: center;
         align-items: center;
