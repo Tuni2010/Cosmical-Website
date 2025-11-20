@@ -1,16 +1,16 @@
+const hamburger = document.getElementById('hamburger');
+const hamburgerMenu = document.getElementById('hamburgerMenu');
 
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("hamburgerMenu");
-    const closeBtn = document.querySelector(".close-button");
+hamburger.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('open');   // Menü öffnen/schließen
+    hamburger.classList.toggle('active');     // Hamburger → X Animation
+});
 
-    // Menü öffnen
-    hamburger.addEventListener("click", () => {
-        menu.classList.add("open");
-    });
+const links = document.querySelectorAll('.hamburger-link');
+const currentPage = window.location.pathname.split('/').pop(); 
 
-    // Menü schließen
-    closeBtn.addEventListener("click", () => {
-        menu.classList.remove("open");
-    });
-
-
+links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+    }
+});
