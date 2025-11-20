@@ -175,6 +175,8 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: transform 0.2s ease;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .hotbar-link:hover {
@@ -213,13 +215,25 @@ body {
 }
 
 .hotbar-link.active {
-    border-radius: 40px;
-    background: #9900ff;
-    background: linear-gradient(128deg, rgba(153, 0, 255, 1) 0%, rgba(0, 255, 221, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    background: linear-gradient(90deg, #6f00ff, #00a2ff);
+    -webkit-text-fill-color: #fff !important;
+    color: #fff !important;
+    padding: 4px 10px;
+    border-radius: 30px;
 }
+
+.hotbar-link.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #6f00ff, #00a2ff);
+    border-radius: 30px;
+    z-index: -1;
+}
+
 
 .hamburger {
     display: none;
