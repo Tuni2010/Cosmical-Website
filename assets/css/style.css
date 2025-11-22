@@ -42,15 +42,11 @@ html {
 }
 
 body {
-  min-height: 100vh; 
-  background: linear-gradient(325deg, rgba(219,141,231,1) 0%, rgba(0,0,0,1) 100%);
-  background-attachment: fixed; 
-  background-repeat: no-repeat;   
-  background-size: cover;
   font-family: var(--standart-text-font);
   margin: 0;
   padding: 0;
-  overflow-y: auto; 
+  background-color: rgba(219,141,231,1)
+ 
 }
 
 
@@ -166,6 +162,7 @@ body {
 }
 
 .test {
+    
     width: 200px;
     height: 1000px;
     background-color: red;
