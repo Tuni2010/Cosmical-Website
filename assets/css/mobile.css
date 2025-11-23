@@ -1,5 +1,8 @@
 
-
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 .mobile-bg {
   position: fixed;
@@ -62,12 +65,10 @@
   transform: translateX(-50%);
 }
 
-/* Positionierung der Balken */
 .bar:nth-child(1) { top: 10px; }
 .bar:nth-child(2) { top: 50%; transform: translate(-50%, -50%); }
 .bar:nth-child(3) { bottom: 10px; }
 
-/* X Animation */
 .hamburger.active .bar:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -93,8 +94,6 @@
     border: 1px solid rgb(48, 47, 47);
     padding-top: 10px;
     padding-bottom: 10px;
-
-    /* Animation vorbereiten */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -102,8 +101,9 @@
 }
 
 .hamburger-menu.open {
-    max-height: 500px; /* ausreichend, dass alle Links reinpassen */
+    max-height: 500px;
     opacity: 1;
+    z-index: 999;
 }
 
 
@@ -120,7 +120,13 @@
 }
 
 .hamburger-link.active {
-    background: linear-gradient(90deg, #6f00ff, #00a2ff);
-    
-   
+    background: linear-gradient(90deg, #6f00ff, #00a2ff); 
+}
+
+.article-page {
+  top: 0px;
+}
+
+.main-article {
+ width: 95%;
 }
