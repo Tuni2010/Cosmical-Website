@@ -98,6 +98,11 @@ body {
     overflow: hidden;
     opacity: 0;
     transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 80px;
 }
 
 .hamburger-menu.open {
@@ -124,7 +129,7 @@ body {
 }
 
 .article-page {
-  top: 0px;
+  top: 10px;
 }
 
 .main-article {

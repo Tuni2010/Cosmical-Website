@@ -6,6 +6,8 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');     // Hamburger → X Animation
 });
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
   // Wähle die Link-Selectoren, die du markieren willst
   const selectors = ['.hotbar-link', '.hotbar-link-join-us', '.hamburger-link', '.cosmical-logo-link'];
