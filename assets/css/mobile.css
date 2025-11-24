@@ -35,6 +35,10 @@ body {
     
 }
 
+.cosmical-logo {
+  border: 1px solid rgb(61, 61, 61)
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
