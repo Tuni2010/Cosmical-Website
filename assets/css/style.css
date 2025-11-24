@@ -281,7 +281,7 @@ main {
     width: 100%;
     padding: var(--spacing-lg);
     text-align: center;
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     font-size: 14px;
     border-top: var(--border-grey);
     margin-top: auto;

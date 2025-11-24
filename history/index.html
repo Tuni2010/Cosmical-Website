@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/mobile.css" media="(max-width: 600px)">
-    <script src="/assets/js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Cosmical Clan - Offizieller 6b6t Minecraft Clan">
+    <meta name="keywords" content="Cosmical, 6b6t, Minecraft, Clan">
+    <meta name="theme-color" content="#6b21a8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/assets/pictures/cosmical-logo.webp">
-    <title>Cosmical Clan</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css" media="(max-width: 600px)">
+    <link rel="icon" type="image/webp" href="/assets/pictures/cosmical-logo.webp">
+    <script src="/assets/js/script.js" defer></script>
+    <title>Cosmical Clan - History</title>
 </head>
 
 <body>
-    <div class="mobile-bg"></div>
-    <header class="main-hotbar">
-        <a class="cosmical-logo-link" href="https://cosmical.cc">
-            <img class="cosmical-logo" src="/assets/pictures/cosmical-logo.webp" alt="Cosmical Clan Logo">
+    <div class="mobile-bg" aria-hidden="true"></div>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="main-hotbar" role="banner">
+        <a class="cosmical-logo-link" href="/" aria-label="Zur Startseite">
+            <img class="cosmical-logo" src="/assets/pictures/cosmical-logo.webp" alt="Cosmical Clan Logo" width="40"
+                height="40">
             <span class="logo-text">COSMICAL</span>
         </a>
-        <div class="inside-hotbar">
+        <nav class="inside-hotbar" role="navigation" aria-label="Hauptnavigation">
             <a class="hotbar-link" href="/">HOME</a>
             <a class="hotbar-link" href="/history">HISTORY</a>
             <a class="hotbar-link" href="/projects">PROJECTS</a>
@@ -31,20 +35,22 @@
             <a class="hotbar-link" href="/allies">ALLIES</a>
             <a class="hotbar-link" href="/events">EVENTS</a>
             <a class="hotbar-link" href="/join-us">JOIN US</a>
-        </div>
+        </nav>
     </header>
-    <header class="mobile-hotbar">
-        <a class="cosmical-logo-link" href="https://cosmical.cc">
-            <img class="cosmical-logo" src="/assets/pictures/cosmical-logo.webp" alt="Cosmical Clan Logo">
+    <header class="mobile-hotbar" role="banner">
+        <a class="cosmical-logo-link" href="/" aria-label="Zur Startseite">
+            <img class="cosmical-logo" src="/assets/pictures/cosmical-logo.webp" alt="Cosmical Clan Logo" width="40"
+                height="40">
             <span class="logo-text">COSMICAL</span>
         </a>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false"
+            aria-controls="hamburgerMenu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
     </header>
-    <div class="hamburger-menu" id="hamburgerMenu">
+    <nav class="hamburger-menu" id="hamburgerMenu" role="navigation" aria-label="Mobile Navigation">
         <a class="hamburger-link" href="/">HOME</a>
         <a class="hamburger-link" href="/history">HISTORY</a>
         <a class="hamburger-link" href="/projects">PROJECTS</a>
@@ -53,7 +59,16 @@
         <a class="hamburger-link" href="/allies">ALLIES</a>
         <a class="hamburger-link" href="/events">EVENTS</a>
         <a class="hamburger-link" href="/join-us">JOIN US</a>
-    </div>
+    </nav>
+    <main id="main-content">
+        <div class="headline-container">
+            <p class="upperline">6b6t Clan</p>
+            <p class="headline-cosmical">COSMICAL</p>
+        </div>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+        <p>&copy; 2024 Cosmical Clan | Made by Tuni2010</p>
+    </footer>
 </body>
 
 </html>
