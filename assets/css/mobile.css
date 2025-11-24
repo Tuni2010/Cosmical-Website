@@ -31,7 +31,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: var(--grey-border);
     background-color: var(--dark-mode-background-color); 
     
 }
@@ -123,6 +122,44 @@ body {
     align-items: center;
     width: 80%;
 }
+
+.article-text {
+  font-size: 12px;
+  width: 120px;
+}
+
+.headline-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: clamp(300px, 80%, 600px);
+    }
+
+.headline-container::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--grey-font-color);
+    margin: 20px auto 0 auto;
+    align-items: center;
+    display: block;
+}
+
+.upperline {
+    font-size: 16px;
+    color: var(--grey-font-color);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    }
+
+.headline-cosmical {
+    font-size: clamp(32px, 6vw, 80px);
+    font-weight: 300;
+    letter-spacing: 20px;
+    color: white;
+    }
 
 .hamburger-link.active {
     background: linear-gradient(90deg, #6f00ff, #00a2ff); 
