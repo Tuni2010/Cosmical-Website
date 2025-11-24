@@ -213,19 +213,7 @@ body {
     position: relative;
 }
 
-.article-img::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: conic-gradient(blue, green, red, grey);
-    z-index: -1;
-    padding: 5px;
-    border-radius: 20px;
-}
+
 
 .article-img {
     width: 100%;
@@ -235,14 +223,16 @@ body {
 
 
 .article-text {
+    font-size: 13px;
+    color: white;
     display: flex;
-    position: relative;
+    position: absolute;
     background-color: rgb(44, 44, 44);
     width: 150px;
     justify-content: center;
     align-items: center;
     padding: 4px;
     left: 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    bottom: 10px;
+    border-radius: 10px;
 }
