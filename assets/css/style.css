@@ -8,6 +8,7 @@
     /* Farben */
     --color-text-primary: #ffffff;
     --color-text-secondary: #94a3b8;
+    --color-text-grey-hover: rgb(58, 58, 58);
     --color-bg-primary: #121212;
     --color-bg-surface: #1b1b1b;
     
@@ -19,7 +20,8 @@
     
     /* Borders */
     --border-grey: 1px solid rgb(48, 47, 47);
-    --border-white: 1px solid white;
+    --border-light-grey: 1px solid rgb(92, 92, 92);
+    --border-white: 1px solid rgb(255, 255, 255);
     
     /* Spacing */
     --spacing-xs: 4px;
@@ -96,7 +98,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: var(--border-white);
+    border: var(--border-light-grey);
     border-radius: 80px;
     gap: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -143,7 +145,8 @@ body {
     flex: 1;
     max-width: 800px;
     height: 50px;
-    border: var(--border-white);
+    border: var(--border-light-grey);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     padding: 0 10px;
 }
@@ -284,14 +287,53 @@ main {
    FOOTER
    ============================================ */
 .site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
     width: 100%;
     padding: var(--spacing-lg);
     text-align: center;
     color: var(--color-text-primary);
     font-size: 14px;
     border-top: var(--border-grey);
-    margin-top: auto;
 }
+
+.footer-socials-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-icon {
+   margin-top: 4px;
+   border: 1px solid light-dark;
+   filter: brightness(0) invert(1);
+   padding: 3px;
+   border-radius: 5px;
+}
+
+
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    border: var(--border-white);
+    border-radius: 10px;
+    text-decoration: none;
+    background-color:rgb(34, 34, 34);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    gap: 10px;
+}
+
+
 
 /* ============================================
    ANIMATIONS
