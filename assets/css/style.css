@@ -162,10 +162,16 @@ body {
     position: relative;
 }
 
+.hotbar-link:last-child {
+   background-image: linear-gradient(90deg, #20acfd, #2cff37);
+}
+
+.hotbar-link:last-child:hover {
+   background-image: linear-gradient(90deg, #a200ff, #00a2ff);
+}
+
 .hotbar-link:hover {
-    background: linear-gradient(128deg, #ffffff 0%, rgba(255, 255, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(128deg, #ffffff 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .hotbar-link.active {
