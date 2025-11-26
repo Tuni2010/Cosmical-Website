@@ -116,7 +116,7 @@ body {
 
 .cosmical-logo {
     border-radius: 50%;
-    border: var(--border-white);
+    border: var(--border-light-grey);
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -291,12 +291,12 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-image: linear-gradient(293deg, hsl(220 15% 7%), hsl(280 80% 9%));
     width: 100%;
     padding: var(--spacing-lg);
     text-align: center;
     color: var(--color-text-primary);
-    font-size: 14px;
+    font-size: 16px;
     border-top: var(--border-grey);
 }
 
@@ -312,6 +312,8 @@ main {
    filter: brightness(0) invert(1);
    padding: 3px;
    border-radius: 5px;
+   width: 35px;
+   height: 35px;
 }
 
 
@@ -322,7 +324,6 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 5px 10px;
-    border: var(--border-white);
     border-radius: 10px;
     text-decoration: none;
     background-color:rgb(34, 34, 34);
@@ -333,7 +334,11 @@ main {
     gap: 10px;
 }
 
-
+.footer-social-link:hover {
+    background-color: var(--purple-600);
+    border: 1px solid var(--purple-400);
+    transition: all var(--transition-normal);
+}
 
 /* ============================================
    ANIMATIONS

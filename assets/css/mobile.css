@@ -196,9 +196,38 @@ main {
 
 /* Footer */
 .site-footer {
-    font-size: 12px;
-    padding: var(--spacing-md);
-}
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px 20px;
+        
+    }
+
+    .footer-socials-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: var(--border-grey);
+        padding-bottom: 10px;
+        
+    }
+
+    .footer-social-link {
+        padding: 5px 8px;
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        padding: 2px;
+    }
+
 
 /* Touch Improvements */
 @media (hover: none) and (pointer: coarse) {
