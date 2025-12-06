@@ -52,6 +52,14 @@ html, body {
     overflow-x: hidden; /* verhindert horizontalen Scroll */
 }
 
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* statt 100vh */
+    align-items: center;
+}
 
 /* ============================================
    BACKGROUND
