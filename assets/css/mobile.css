@@ -27,6 +27,7 @@ body {
 
 /* Mobile Header */
 .mobile-hotbar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -166,6 +167,7 @@ body {
 
 /* Content Adjustments for Mobile */
 main {
+    padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
 }
