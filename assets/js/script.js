@@ -5,6 +5,13 @@
 
 'use strict';
 
+
+function adjustHeight() {
+document.body.style.height = `${window.innerHeight}px`;
+}
+window.addEventListener('resize', adjustHeight);
+adjustHeight(); // Call it on page load
+
 // ============================================
 // HAMBURGER MENU FUNCTIONALITY
 // ============================================
