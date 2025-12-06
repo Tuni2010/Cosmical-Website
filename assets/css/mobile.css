@@ -3,13 +3,6 @@
    ============================================ */
 
 /* Desktop Navigation verstecken */
-
-html, body {
-height: 100%;
-margin: 0;
-overflow: hidden;
-}
-
 .main-hotbar {
     display: none;
 }
