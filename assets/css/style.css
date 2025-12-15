@@ -11,6 +11,9 @@
     --color-text-grey-hover: rgb(58, 58, 58);
     --color-bg-primary: #121212;
     --color-bg-surface: #1b1b1b;
+    --color-dark-grey:  rgb(34, 34, 34);
+
+    --lightblue-to-lightpurple-gradient-color: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(255, 0, 255, 1) 100%);
     
     /* Purple Theme */
     --purple-900: #0b0226;
@@ -51,6 +54,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
+    height: 100%;
 }
 
 /* ============================================
@@ -196,8 +200,10 @@ body {
 main {
     width: 100%;
     max-width: 1200px;
+    height: 100%;
     padding: 0 20px;
     flex: 1;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /* Headline Container */
@@ -206,7 +212,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 140px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 600px;
     margin-left: auto;
@@ -250,7 +256,7 @@ main {
     width: 100%;
     gap: 40px;
     padding-bottom: 40px;
-    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
 }
 
 .main-article {
@@ -289,7 +295,12 @@ main {
    ============================================ */
 
 .about-us-section {
-    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -299,14 +310,63 @@ main {
     width: 100%;
     gap: 15px;
     align-items: center;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
     justify-content: center;
-    border: var(--border-grey)
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.about-us-text:hover {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.timeline-header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    margin-top: 350px;
+    margin-bottom: 30px;
+}
+
+.timeline-header-section {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    border: 1px rgb(0, 204, 255) solid;
+    border-radius: 40px;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 10px;
+}
+
+.timeline-header-section:hover {
 
 }
 
-.timeline-container {
+.timeline-header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    background-image: var(--lightblue-to-lightpurple-gradient-color);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
 
+.calendar-icon {
+    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+.timeline-container {
+    display: flex;
+    min-height: 100vh;
 }
 
 .timeline-left {
@@ -314,7 +374,10 @@ main {
 }
 
 .timeline-line {
-
+    width: 2px;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg,rgba(153, 0, 255, 1) 0%, rgba(0, 255, 221, 1) 100%);
+    
 }
 
 .timeline-right {
@@ -329,7 +392,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: var(--color-bg-primary);
     width: 100%;
     padding: var(--spacing-lg);
     text-align: center;
@@ -365,7 +428,7 @@ main {
     padding: 5px 10px;
     border-radius: 10px;
     text-decoration: none;
-    background-color:rgb(34, 34, 34);
+    background-color: var(--color-dark-grey);
     border: 1px solid black;
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -417,4 +480,29 @@ main {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
