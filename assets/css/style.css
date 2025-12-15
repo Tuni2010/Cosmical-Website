@@ -12,8 +12,8 @@
     --color-bg-primary: #121212;
     --color-bg-surface: #1b1b1b;
     --color-dark-grey:  rgb(34, 34, 34);
-
     --lightblue-to-lightpurple-gradient-color: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(255, 0, 255, 1) 100%);
+
     
     /* Purple Theme */
     --purple-900: #0b0226;
@@ -213,6 +213,7 @@ main {
     align-items: center;
     margin-top: 140px;
     margin-bottom: 20px;
+    margin-bottom: 60px;
     width: 100%;
     max-width: 600px;
     margin-left: auto;
@@ -367,6 +368,15 @@ main {
 .timeline-container {
     display: flex;
     min-height: 100vh;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.timeline-container {
+
+
 }
 
 .timeline-left {
@@ -377,7 +387,7 @@ main {
     width: 2px;
     min-height: 100vh;
     background-image: linear-gradient(0deg,rgba(153, 0, 255, 1) 0%, rgba(0, 255, 221, 1) 100%);
-    
+
 }
 
 .timeline-right {
@@ -393,6 +403,7 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg-primary);
+    background-color: transparent;
     width: 100%;
     padding: var(--spacing-lg);
     text-align: center;
