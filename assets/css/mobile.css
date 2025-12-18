@@ -1,15 +1,14 @@
-/* ============================================
-   MOBILE STYLES - max-width: 600px
-   ============================================ */
-
+/* ============================================ MOBILE STYLES - max-width: 600px ============================================ */
 /* Desktop Navigation verstecken */
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
-    min-height: -webkit-fill-available; /* Safari fix */
-    overflow-x: hidden; /* verhindert horizontalen Scroll */
+    min-height: -webkit-fill-available;
+    /* Safari fix */
+    overflow-x: hidden;
+    /* verhindert horizontalen Scroll */
 }
 
 body {
@@ -17,7 +16,8 @@ body {
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
-    min-height: 100%; /* statt 100vh */
+    min-height: 100%;
+    /* statt 100vh */
     align-items: center;
 }
 
@@ -125,8 +125,7 @@ body {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height var(--transition-normal), 
-                opacity var(--transition-normal);
+    transition: max-height var(--transition-normal), opacity var(--transition-normal);
     position: fixed;
     width: 100%;
     top: 80px;
@@ -213,40 +212,48 @@ main {
     padding: 6px 8px;
 }
 
+
+/* ============================================
+   ABOUT US PAGE
+   ============================================ */
+
+.timeline-line {
+    display: none;
+}
+
+
 /* Footer */
 .site-footer {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 15px;
-        padding: 20px;
-        text-align: center;
-        font-size: 13px;
-        padding: 10px 20px;
-        
-    }
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 20px;
+    background-color: black;
+}
 
-    .footer-socials-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        border-bottom: var(--border-grey);
-        padding-bottom: 10px;
-        
-    }
+.footer-socials-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: var(--border-grey);
+    padding-bottom: 10px;
+}
 
-    .footer-social-link {
-        padding: 5px 8px;
-        font-size: 14px;
-        gap: 5px;
-    }
+.footer-social-link {
+    padding: 5px 8px;
+    font-size: 14px;
+    gap: 5px;
+}
 
-    .social-icon {
-        width: 28px;
-        height: 28px;
-        padding: 2px;
-    }
-
+.social-icon {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
 
 /* Touch Improvements */
 @media (hover: none) and (pointer: coarse) {
@@ -254,7 +261,7 @@ main {
         min-height: 48px;
         min-width: 48px;
     }
-    
+
     .hamburger-link {
         min-height: 48px;
         padding: 14px;

@@ -200,7 +200,6 @@ body {
 main {
     width: 100%;
     max-width: 1200px;
-    height: 100%;
     padding: 0 20px;
     flex: 1;
     animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -367,11 +366,9 @@ main {
 
 .timeline-container {
     display: flex;
-    min-height: 100vh;
     padding: 15px;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid black;
 }
 
 .timeline-container {
@@ -380,14 +377,13 @@ main {
 }
 
 .timeline-left {
-
+    
 }
 
 .timeline-line {
     width: 2px;
     min-height: 100vh;
     background-image: linear-gradient(0deg,rgba(153, 0, 255, 1) 0%, rgba(0, 255, 221, 1) 100%);
-
 }
 
 .timeline-right {

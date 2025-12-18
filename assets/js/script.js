@@ -154,6 +154,8 @@ function initActiveLinkHighlighting() {
     });
 }
 
+
+
 // ============================================
 // SMOOTH SCROLL FOR ANCHOR LINKS
 // ============================================
