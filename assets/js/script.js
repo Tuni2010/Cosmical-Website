@@ -273,3 +273,26 @@ triggers.forEach((trigger, index) => {
     targets[index].classList.remove('active');
   });
 });
+
+const elements = document.querySelectorAll('div, section');
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const index = Array.from(elements).indexOf(entry.target);
+      setTimeout(() => {
+        entry.target.style.animation = `fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both`;
+      }, index * 25); // gestaffelte Animation
+      observer.unobserve(entry.target); // nur einmal animieren
+    }
+  });
+}, {
+  threshold: 0.1 // Animation startet, wenn 10% der Section sichtbar sind
+});
+
+// Anfangszustand setzen und Sections beobachten
+elements.forEach(el => {
+  el.style.opacity = 0; // unsichtbar am Anfang
+  el.tabIndex = -1; // verhindert Fokus-Autoscroll
+  observer.observe(el);
+});
