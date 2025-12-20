@@ -319,11 +319,6 @@ main {
     font-size: 17px;
 }
 
-.about-us-text:hover {
-    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 .timeline-header-container {
     display: flex;
     flex-wrap: wrap;
