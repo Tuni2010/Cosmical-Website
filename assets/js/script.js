@@ -154,6 +154,8 @@ function initActiveLinkHighlighting() {
     });
 }
 
+
+
 // ============================================
 // SMOOTH SCROLL FOR ANCHOR LINKS
 // ============================================
@@ -257,4 +259,17 @@ document.addEventListener('visibilitychange', () => {
             document.body.style.overflow = '';
         }
     }
+});
+
+const triggers = document.querySelectorAll('.left-timeline-box, .right-timeline-box');
+const targets = document.querySelectorAll('.timeline-image');
+
+triggers.forEach((trigger, index) => {
+  trigger.addEventListener('mouseenter', () => {
+    targets[index].classList.add('active');
+  });
+
+  trigger.addEventListener('mouseleave', () => {
+    targets[index].classList.remove('active');
+  });
 });

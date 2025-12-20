@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://cosmical.cc/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/about-us/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/projects/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/leaders/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/griefs/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/allies/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/events/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmical.cc/join-us/</loc>
+  <lastmod>2025-11-26T20:47:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
