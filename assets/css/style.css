@@ -444,8 +444,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 315px;
-    margin-top: 280px;
-    
+    margin-top: 280px;  
 }
 
 
