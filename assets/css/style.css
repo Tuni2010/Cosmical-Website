@@ -271,7 +271,7 @@ main {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    border: var(--border-grey);
+    border: var(--purple-600) 2px solid;
 }
 
 .article-img {

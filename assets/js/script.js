@@ -274,7 +274,7 @@ triggers.forEach((trigger, index) => {
   });
 });
 
-const elements = document.querySelectorAll('div, section');
+const elements = document.querySelectorAll('div, section, article');
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
