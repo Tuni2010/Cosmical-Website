@@ -51,7 +51,7 @@
 
 body {
     background-image: linear-gradient(360deg, hsl(220 15% 7%), hsl(281, 90%, 12%));
-    font-family: var(--font-primary);
+    font-family: 'VHS-Font', sans-serif;
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
@@ -577,4 +577,16 @@ main {
             transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+/* ============================================
+   FONTS
+   ============================================ */
+@font-face {
+    font-family: 'VHS-Font';
+    src: url('/assets/fonts/VHS-Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
