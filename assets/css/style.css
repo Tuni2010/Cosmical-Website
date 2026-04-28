@@ -1,11 +1,7 @@
-/* ============================================
-   CSS VARIABLES - Zentrale Farbdefinitionen
-   ============================================ */
-:root {
-    /* Schriften */
+
+:root {  
     --font-primary: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     
-    /* Farben */
     --color-text-primary: #ffffff;
     --color-text-secondary: #94a3b8;
     --color-text-grey-hover: rgb(58, 58, 58);
@@ -14,8 +10,6 @@
     --color-dark-grey:  rgb(34, 34, 34);
     --lightblue-to-lightpurple-gradient-color: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(255, 0, 255, 1) 100%);
 
-    
-    /* Purple Theme */
     --purple-900: rgb(11, 2, 38);
     --purple-600: rgb(75, 25, 120);
     --purple-500: rgb(107, 33, 168);
@@ -23,19 +17,16 @@
 
     --transparent-dark-purple: rgba(75, 25, 120, 0.5);
     
-    /* Borders */
     --border-grey: 1px solid rgb(48, 47, 47);
     --border-light-grey: 1px solid rgb(51, 51, 51);
     --border-white: 1px solid rgb(255, 255, 255);
     
-    /* Spacing */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
     
-    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }

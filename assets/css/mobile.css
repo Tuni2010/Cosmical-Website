@@ -1,5 +1,4 @@
-/* ============================================ MOBILE STYLES - max-width: 600px ============================================ */
-/* Desktop Navigation verstecken */
+
 html,
 body {
     margin: 0;
@@ -25,7 +24,6 @@ body {
     display: none;
 }
 
-/* Mobile Header */
 .mobile-hotbar {
     position: fixed;
     top: 0;
@@ -46,7 +44,6 @@ body {
     height: 40px;
 }
 
-/* Hamburger Button */
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -113,7 +110,6 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* Mobile Menu */
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -164,7 +160,6 @@ body {
     border-color: transparent;
 }
 
-/* Content Adjustments for Mobile */
 main {
     padding-top: 100px;
     padding-left: 15px;
@@ -195,7 +190,6 @@ main {
     padding-left: 10px;
 }
 
-/* Articles */
 .article-page {
     gap: 20px;
     padding-bottom: 30px;
@@ -283,7 +277,6 @@ main {
     padding: 2px;
 }
 
-/* Touch Improvements */
 @media (hover: none) and (pointer: coarse) {
     .hamburger {
         min-height: 48px;
