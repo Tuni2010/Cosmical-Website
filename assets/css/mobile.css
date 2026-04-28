@@ -5,13 +5,10 @@ body {
     padding: 0;
     height: 100%;
     min-height: -webkit-fill-available;
-    /* Safari fix */
     overflow-x: hidden;
-    /* verhindert horizontalen Scroll */
 }
 
 body {
-    font-family: var(--font-primary);
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
