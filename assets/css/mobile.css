@@ -9,6 +9,7 @@ body {
 }
 
 body {
+    font-family: 'VHS-Font', sans-serif;
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
