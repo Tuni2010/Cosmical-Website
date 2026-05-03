@@ -113,8 +113,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: var(--color-bg-primary);
-    border: 1px solid rgb(48, 47, 47);
+    background-color: var(--color-bg-primary); 
     padding: 10px 0;
     max-height: 0;
     overflow: hidden;
@@ -129,7 +128,7 @@ body {
 }
 
 .hamburger-menu.open {
-    max-height: 500px;
+    max-height: 600px;
     opacity: 1;
 }
 
@@ -155,7 +154,6 @@ body {
 
 .hamburger-link.active {
     background: linear-gradient(90deg, #6f00ff, #00a2ff);
-    border-color: transparent;
 }
 
 main {
@@ -196,7 +194,6 @@ main {
 .main-article {
     width: 100%;
     max-width: 100%;
-    box-shadow: 0 0 6px 3px var(--purple-600);
 }
 
 .article-text {
