@@ -6,45 +6,54 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
-
 <url>
   <loc>https://cosmicalclan.org/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://cosmicalclan.org/about-us/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cosmicalclan.org/projects/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cosmicalclan.org/leaders/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cosmicalclan.org/griefs/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cosmicalclan.org/allies/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cosmicalclan.org/events/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmicalclan.org/media/</loc>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmicalclan.org/leaders/</loc>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmicalclan.org/branches/</loc>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmicalclan.org/allies/</loc>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cosmicalclan.org/kitbot/</loc>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://cosmicalclan.org/join-us/</loc>
-  <lastmod>2026-04-28T15:47:05+00:00</lastmod>
+  <lastmod>2026-05-03T16:41:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
