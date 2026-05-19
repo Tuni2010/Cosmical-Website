@@ -17,20 +17,16 @@ function initHamburgerMenu() {
         return;
     }
     
-    // Toggle menu on click
     hamburger.addEventListener('click', () => {
         const isOpen = hamburgerMenu.classList.toggle('open');
         hamburger.classList.toggle('active');
         
-        // Update ARIA attributes for accessibility
         hamburger.setAttribute('aria-expanded', isOpen);
         hamburger.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
         
-        // Prevent body scroll when menu is open
         document.body.style.overflow = isOpen ? 'hidden' : '';
     });
     
-    // Close menu when clicking on a link
     const menuLinks = hamburgerMenu.querySelectorAll('.hamburger-link');
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -42,7 +38,6 @@ function initHamburgerMenu() {
         });
     });
     
-    // Close menu on ESC key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && hamburgerMenu.classList.contains('open')) {
             hamburgerMenu.classList.remove('open');
@@ -54,7 +49,6 @@ function initHamburgerMenu() {
         }
     });
     
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (hamburgerMenu.classList.contains('open') && 
             !hamburgerMenu.contains(e.target) && 
@@ -274,7 +268,7 @@ triggers.forEach((trigger, index) => {
   });
 });
 
-const elements = document.querySelectorAll('div, section, article');
+const elements = document.querySelectorAll('section, article');
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
