@@ -1,3 +1,7 @@
+@view-transition {
+    navigation: auto; 
+}
+
 
 :root {  
     --font-primary: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
